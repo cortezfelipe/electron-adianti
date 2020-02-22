@@ -18,7 +18,15 @@ function createWindow () {
   mainWindow.setMenuBarVisibility(false)
   // and load the index.html of the app.
   //mainWindow.loadFile('index.html')
-  var userName = process.env['USERPROFILE'].split(path.sep)[2];
+  //windows
+  //var userName = process.env['USERPROFILE'].split(path.sep)[2]; 
+  //Linux
+  var userName = process.env["USER"]
+
+  if(userName === undefined){
+    var userName = process.env['USERPROFILE'].split(path.sep)[2]; 
+  }
+
   mainWindow.loadURL('http://192.168.1.9/fw7/index.php?class=WelcomeView&method=onLoad&user='+userName)
   //mainWindow.loadURL('http://felipecortez.kinghost.net/template')
   
