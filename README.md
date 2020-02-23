@@ -16,7 +16,7 @@ git clone https://github.com/cortezfelipe/electron-adianti
 # Go into the repository
 cd electron-adianti
 
-# change line 31 your server PHP
+# main.js change line 31 your server PHP 
 
 # Install dependencies
 npm install
