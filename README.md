@@ -1,6 +1,5 @@
 # electron-adianti
 
-# require Node.js > 10 
 
 A simple example run Adianti in Electron 
 
@@ -26,5 +25,6 @@ npm start
 
 # builder .exe
 npm run dist 
+```
 ## License
 MIT
