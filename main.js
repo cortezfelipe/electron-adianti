@@ -18,13 +18,13 @@ function createWindow () {
   //mainWindow.setMenuBarVisibility(false)
   // and load the index.html of the app.
   //mainWindow.loadFile('index.html')
-  //windows
- 
+  
   //var userName = process.env['USERPROFILE'].split(path.sep)[2]; 
   //Linux
   if(process.platform === 'linux'){
   var userName = process.env["USER"]
-  }else{  
+  }else{
+  //Windows  
   var userName = process.env['USERPROFILE'].split(path.sep)[2]; 
   }
 
