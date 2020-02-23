@@ -15,21 +15,22 @@ function createWindow () {
     }
     
   })
-  mainWindow.setMenuBarVisibility(false)
+  //mainWindow.setMenuBarVisibility(false)
   // and load the index.html of the app.
   //mainWindow.loadFile('index.html')
   //windows
+ 
   //var userName = process.env['USERPROFILE'].split(path.sep)[2]; 
   //Linux
+  if(process.platform === 'linux'){
   var userName = process.env["USER"]
-
-  if(userName === undefined){
-    var userName = process.env['USERPROFILE'].split(path.sep)[2]; 
+  }else{  
+  var userName = process.env['USERPROFILE'].split(path.sep)[2]; 
   }
 
   mainWindow.loadURL('http://192.168.1.9/fw7/index.php?class=WelcomeView&method=onLoad&user='+userName)
   //mainWindow.loadURL('http://felipecortez.kinghost.net/template')
-  
+  //mainWindow.loadURL('http://192.168.1.9/tutor7')
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
