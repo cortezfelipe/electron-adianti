@@ -8,8 +8,8 @@ const path = require('path')
 function createWindow () {
   // Create the browser window.
   const mainWindow = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1000,
+    height: 800,
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
@@ -28,9 +28,7 @@ function createWindow () {
   var userName = process.env['USERPROFILE'].split(path.sep)[2]; 
   }
 
-  mainWindow.loadURL('http://192.168.1.9/fw7/index.php?class=WelcomeView&method=onLoad&user='+userName)
-  //mainWindow.loadURL('http://felipecortez.kinghost.net/template')
-  //mainWindow.loadURL('http://192.168.1.9/tutor7')
+  mainWindow.loadURL('http://localhost/fw7/index.php?class=WelcomeView&method=onLoad&user='+userName)
   // Open the DevTools.
   // mainWindow.webContents.openDevTools()
 }
