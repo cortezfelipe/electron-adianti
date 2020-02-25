@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
 // var loginId = path.join("domainName",userName);
 // console.log(userName);
 //document.write(userName)
-console.log(process.platform) 
+
 })
 
 
