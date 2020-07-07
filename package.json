@@ -19,7 +19,7 @@
   "author": "Felipe Cortez",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^8.0.1",
+    "electron": "^8.2.4",
     "electron-builder": "^22.3.2"
   },
   "build": {
